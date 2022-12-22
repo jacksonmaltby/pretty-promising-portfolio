@@ -1,0 +1,20 @@
+/* body { */
+    /* background-color: ; */
+/* } */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkred;
+    color: whitesmoke;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav a {
+    padding: 8px 12px;
+    color: inherit;
+}
