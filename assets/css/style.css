@@ -2,9 +2,9 @@
     box-sizing: border-box;
 }
 
-/* body { */
-    /* background-color: ; */
-/* } */
+body {
+    background-color: #606069;
+}
 
 .navbar {
     display: flex;
@@ -21,4 +21,29 @@
 .nav a {
     padding: 8px 12px;
     color: inherit;
+}
+
+#refect-that-code {
+    background-image: url('../images/refact-image.jpg');
+    background-size: cover;
+}
+
+#prework-study-guide {
+    background-image: url('../images/prework-image.jpg');
+    background-size: cover;
+}
+
+#under-construction {
+    background-image: url('../images/under-image.jpg');
+    background-size: cover;
+}
+
+#coming-soon {
+    background-image: url('../images/coming-image.jpg');
+    background-size: cover;
+}
+
+#en-route {
+    background-image: url('../images/en-image.jpg');
+    background-size: cover;
 }
