@@ -2,28 +2,74 @@
     box-sizing: border-box;
 }
 
+:root {
+    --dark: #2f2f2f;
+    --light: #f0f0f0;
+    --highlight: #632020;
+    --hover: #eeca00;
+}
+
 body {
-    background-color: #606069;
+    background-color: var(--dark);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--light);
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: darkred;
-    color: whitesmoke;
+    align-items: center;
+    background-color: var(--highlight);
+    height: 50px;
+}
+
+h1 {
+    font-size: xx-large;
+    padding-left: 100px;
+    padding-right: 10px;
+    background-color: var(--dark);
 }
 
 .nav {
     display: flex;
     list-style: none;
+    font-weight: bold;
+    font-size: larger;
+    padding: 15px;
 }
 
 .nav a {
-    padding: 8px 12px;
-    color: inherit;
+    margin: 10px 30px;
+    color: var(--light);
 }
 
-#refect-that-code {
+.nav a:hover {
+    color: var(--hover);
+}
+
+.splash-image {
+    display: flex;
+    background-image: url('../images/cyberspace-image.jpg');
+    background-size: 100% 100%;
+    height: 400px;
+}
+
+h2 {
+    margin: 50px;
+    margin-top: 270px;
+    font-size: xx-large;
+}
+
+article {
+    display: flex;
+}
+
+.profile {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#refact-that-code {
     background-image: url('../images/refact-image.jpg');
     background-size: cover;
 }
@@ -46,4 +92,41 @@ body {
 #en-route {
     background-image: url('../images/en-image.jpg');
     background-size: cover;
+}
+
+#contact-me {
+    display: flex;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section {
+    display: flex;
+}
+
+.main-project {
+    display: flex;
+}
+
+#contact-me ul {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
 }
