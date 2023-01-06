@@ -5,16 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jackson Maltby's Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <nav class="navbar">
         <h1>Jackson Maltby</h1>
         <ul class="nav">
-            <li><a href="#About Me">About Me</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Contact Me">Contact Me</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
             <li><a href="./assets/resume/Maltby, Jackson Resume.pdf">Resume</a></li>
         </ul>
     </nav>
@@ -22,56 +21,61 @@
         <h2>Welcome To My Portfolio</h2>
     </header>
     <main>
-        <article id="About Me">
-            <h3>About Me</h3>
-            <img src="./assets/images/me-image.jpg" alt="Selfie of half my face with someone peeking from behind" class="profile">
-            <p>Hello, my name is Jackson, and I have been coding since 2022. I am currently a student in the UW coding bootcamp. I have always had a fascination for how things work, and how to build them.
-            
-            Below, you will find a collection of projects that I've completed that I am most proud of. I hope you enjoy some or all of them. Please do not contact me unless you intend to contact me. Thank you and have fun.</p>
+        <article id="about-me">
+            <div class="about-me-figure">
+                <h3 class="about-me-title">About Me</h3>
+                <img src="./assets/images/me-image.jpg" alt="Selfie of half my face with someone peeking from behind" class="profile"></img>
+            </div>
+            <div class="blurb">
+                <div>Hello, my name is Jackson, and I have been coding since 2022. I am currently a student in the UW coding bootcamp, and am interested in creating intuitive and user-friendly websites and web applications. I have always had a fascination for how things work, and how to build them.</div>
+                <div class="blurb2">Below, you will find a collection of projects that I've completed that I am most proud of. I hope you enjoy some or all of them. Please do not contact me unless you intend to contact me. Thank you and have fun.</div>
+            </div>
         </article>
-        <summary id="Projects">
+        <summary id="projects">
             <h3>Projects</h3>
-            <section>
-                <a href="https://jacksonmaltby.github.io/refact-that-code/">
-                    <figure id="refact-that-code">
-                        <aside class="main-project">
+            <section class="project-images">
+                <a href="https://jacksonmaltby.github.io/refact-that-code/" class="main-project">
+                    <figure id="refact-that-code" class="big-project">
+                        <aside class="aside">
                             <h4>Refact That Code</h4>
                             <p>HTML/CSS</p>
                         </aside>
                     </figure>
                 </a>
-                <a href="https://jacksonmaltby.github.io/prework-study-guide/">
-                    <figure id="prework-study-guide">
-                        <aside class="projects">
-                            <h4>Prework Study Guide</h4>
-                            <p>HTML/CSS</p>
-                        </aside>
-                    </figure>
-                </a>
-                <a href="#under-construction">
-                    <figure id="under-construction">
-                        <aside class="projects">
-                            <h4>Under Construction</h4>
-                            <p>N/A</p>
-                        </aside>
-                    </figure>
-                </a>
-                <a href="#coming-soon">
-                    <figure id="coming-soon">
-                        <aside class="projects">
-                            <h4>Coming Soon</h4>
-                            <p>N/A</p>
-                        </aside>
-                    </figure>
-                </a>
-                <a href="#en-route">
-                    <figure id="en-route">
-                        <aside class="projects">
-                            <h4>En Route</h4>
-                            <p>N/A</p>
-                        </aside>
-                    </figure>
-                </a>
+                <div class="projects">
+                    <a href="https://jacksonmaltby.github.io/prework-study-guide/">
+                        <figure id="prework-study-guide" class="small-projects">
+                            <aside class="aside">
+                                <h4>Prework Study Guide</h4>
+                                <p>HTML/CSS</p>
+                            </aside>
+                        </figure>
+                    </a>
+                    <a href="#under-construction">
+                        <figure id="under-construction" class="small-projects">
+                            <aside class="aside">
+                                <h4>Under Construction</h4>
+                                <p>N/A</p>
+                            </aside>
+                        </figure>
+                    </a>
+                    <a href="#coming-soon">
+                        <figure id="coming-soon" class="small-projects">
+                            <aside class="aside">
+                                <h4>Coming Soon</h4>
+                                <p>N/A</p>
+                            </aside>
+                        </figure>
+                    </a>
+                    <a href="#en-route">
+                        <figure id="en-route" class="small-projects">
+                            <aside class="aside">
+                                <h4>En Route</h4>
+                                <p>N/A</p>
+                            </aside>
+                        </figure>
+                    </a>
+                </div>
             </section>
         </summary>
         <footer id="contact-me">
